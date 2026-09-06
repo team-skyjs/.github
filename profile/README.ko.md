@@ -70,6 +70,42 @@ UI 언어 10개: English, 한국어, 中文(简体·繁體), 日本語, Español
 
 ---
 
+## 스택 & 도구
+
+**모바일 앱 (kbap-fe)**
+- React Native 0.85 · Expo · expo-router · TypeScript
+- TanStack Query · Reanimated · react-native-svg · i18next(10개 언어)
+- Firebase Auth(Apple·Google 로그인) · ML Kit 텍스트 인식(온디바이스 OCR) · expo-camera · expo-notifications(로컬 리마인더) · expo-secure-store
+- Sentry · Amplitude
+- EAS Build / EAS Update(OTA, teamtest·production 채널) / EAS Workflows(자동 OTA CI) / EAS Submit · TestFlight · Jest
+
+**백엔드 (kbap-server)**
+- Kotlin · Spring Boot · Gradle 멀티모듈(api · batch · common)
+- MySQL(JPA + Flyway) · Redis(리프레시 토큰 회전, 스캔 예약) · JWT
+- Firebase Admin(토큰 검증·계정 삭제) · AWS S3(이미지, presigned 업로드) · S3 Vectors(음식 임베딩) · SQS(배치 파이프라인)
+- OpenAI(gpt-4o-mini, text-embedding-3-small, gpt-image-2) · Google Places / Geocoding · Frankfurter(환율)
+- Langfuse(LLM 관측) · Micrometer + Prometheus + Grafana · k6 + JFR 부하 테스트 · Docker
+
+**인프라**
+- AWS ECS + ALB + CloudWatch + SSM Parameter Store + Route 53 · Terraform
+- GitHub Actions(빌드, dev/prod 카나리 배포)
+
+**콘텐츠 파이프라인**
+- kbap-langchain: LangGraph / LangChain(OpenAI + Google Gemini) · Langfuse · SQS 소비 · Python(uv)
+- kbap-image-maker: OpenAI Images API(gpt-image-2) · Python
+
+**어드민 (kbap-admin)**
+- React · Vite · TypeScript · TanStack Router / Query / Table · Tailwind + shadcn/Radix · Cloudflare Pages
+
+**디자인**
+- Figma(디자이너 시안) · Claude Design(초기 디렉션) · Baloo 2(브랜드 폰트, Google Fonts)
+
+**협업·운영**
+- Jira(KB) · GitHub(조직, 브랜치 룰셋) · OpenAI Codex(PR 자동 리뷰) · Claude Code(커맨드 센터·FE·BE 세션, spec-kit)
+- App Store Connect · Google Play Console · Firebase 콘솔 · Proxyman(네트워크 QA)
+
+---
+
 ## 일하는 방식
 
 - Jira로 태스크를 관리하고, GitHub PR마다 AI 코드 리뷰를 거치며, 제품 결정은 스펙 저장소를 단일 정본으로 둡니다.

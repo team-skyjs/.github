@@ -70,6 +70,42 @@ Specs, the admin console and internal tooling live in private repositories.
 
 ---
 
+## Stack & tools
+
+**Mobile app (kbap-fe)**
+- React Native 0.85 · Expo · expo-router · TypeScript
+- TanStack Query · Reanimated · react-native-svg · i18next (10 languages)
+- Firebase Auth (Sign in with Apple / Google) · ML Kit text recognition (on-device OCR) · expo-camera · expo-notifications (local reminders) · expo-secure-store
+- Sentry · Amplitude
+- EAS Build / EAS Update (OTA, teamtest·production channels) / EAS Workflows (auto OTA CI) / EAS Submit · TestFlight · Jest
+
+**Backend (kbap-server)**
+- Kotlin · Spring Boot · Gradle multi-module (api · batch · common)
+- MySQL (JPA + Flyway) · Redis (refresh-token rotation, scan reservations) · JWT
+- Firebase Admin (token verification, account deletion) · AWS S3 (images, presigned upload) · S3 Vectors (food embeddings) · SQS (batch pipeline)
+- OpenAI (gpt-4o-mini, text-embedding-3-small, gpt-image-2) · Google Places / Geocoding · Frankfurter (FX rates)
+- Langfuse (LLM observability) · Micrometer + Prometheus + Grafana · k6 + JFR load testing · Docker
+
+**Infrastructure**
+- AWS ECS + ALB + CloudWatch + SSM Parameter Store + Route 53 · Terraform
+- GitHub Actions (build, dev/prod canary deploys)
+
+**Content pipeline**
+- kbap-langchain: LangGraph / LangChain (OpenAI + Google Gemini) · Langfuse · SQS consumer · Python (uv)
+- kbap-image-maker: OpenAI Images API (gpt-image-2) · Python
+
+**Admin (kbap-admin)**
+- React · Vite · TypeScript · TanStack Router / Query / Table · Tailwind + shadcn/Radix · Cloudflare Pages
+
+**Design**
+- Figma (designer handoff) · Claude Design (early direction) · Baloo 2 (brand font, Google Fonts)
+
+**Collaboration & operations**
+- Jira (KB) · GitHub (org, branch rulesets) · OpenAI Codex (automated PR review) · Claude Code (command center, FE and BE sessions, spec-kit)
+- App Store Connect · Google Play Console · Firebase console · Proxyman (network QA)
+
+---
+
 ## How we work
 
 - Jira for tasks, GitHub PRs with AI-assisted code review, and a spec repository as the single source of truth for product decisions.
