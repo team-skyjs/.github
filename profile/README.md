@@ -1,114 +1,71 @@
-<!-- team-skyjs/.github/profile/README.md — English. 한국어: README.ko.md -->
+<p align="center">
+  <img src="https://raw.githubusercontent.com/team-skyjs/.github/main/profile/images/app-icon.png" alt="K-Bap app icon" width="112">
+</p>
+<h1 align="center">K-Bap</h1>
+<p align="center"><b>Read Korean menus. Explore the dishes. Order with confidence.</b></p>
+<p align="center">
+  <a href="https://kbap.site/">Website</a> ·
+  <a href="https://apps.apple.com/us/app/k-bap/id6788635067">App Store</a> ·
+  <a href="https://play.google.com/store/apps/details?id=com.rocher.kbap">Google Play</a>
+</p>
+<p align="center"><a href="https://github.com/team-skyjs/.github/blob/main/profile/README.md">English</a> · <a href="https://github.com/team-skyjs/.github/blob/main/profile/README.ko.md">한국어</a></p>
 
-**English** · [한국어](./README.ko.md)
+## From “what does this say?” to “what should I order?”
+
+K-Bap helps international visitors and residents read Korean menus, understand the dishes, and communicate their order. **Available on iOS and Android.**
+
+Beyond translated dish names, explore food descriptions, ingredient guidance, and reviews from international diners. Show restaurant staff a Korean question or order card when you need help communicating.
+
+- **Scan and translate menus** — take a menu photo and read translated dish names and prices.
+- **Explore dishes and ingredients** — learn about the food, spice levels, and ingredients on your avoid list.
+- **Reviews by nationality** — read international diners’ reviews, with a filter for your own nationality.
+- **Korean question and order cards** — ask staff about ingredients or show the dishes you want to order.
+
+Ingredient information is guidance, not a guarantee of allergy safety or suitability for a vegan, halal, or other diet. Recipes and preparation vary by restaurant; always confirm with staff.
+
+## Inside the app
+
+Menu photo → translated results → dish details → Korean order card
 
 <p align="center">
-  <img src="./images/hero.png" alt="K-Bap — scan any Korean menu, see what's safe for you" width="720">
+  <img src="https://raw.githubusercontent.com/team-skyjs/.github/main/profile/images/screen-menu.png" alt="Korean example menu" width="180">
+  <img src="https://raw.githubusercontent.com/team-skyjs/.github/main/profile/images/screen-scan.png" alt="Translated menu results" width="180">
+  <img src="https://raw.githubusercontent.com/team-skyjs/.github/main/profile/images/screen-detail.png" alt="Dish and ingredient details" width="180">
+  <img src="https://raw.githubusercontent.com/team-skyjs/.github/main/profile/images/screen-order.png" alt="Korean order card for staff" width="180">
 </p>
 
-<p align="center">
-  <a href="https://apps.apple.com/app/id6788635067"><img src="./images/badge-app-store.svg" alt="Download on the App Store" height="44"></a>
-  &nbsp;
-  <a href="https://play.google.com/store/apps/details?id=com.rocher.kbap"><img src="./images/badge-google-play.svg" alt="Get it on Google Play" height="44"></a>
-</p>
+iOS simulator captures from October 14, 2026, using an example menu and user preferences. Labels reflect those example preferences.
 
-<p align="center">
-  <b>iOS</b> on the App Store · <b>Android</b> rolling out on Google Play · Project board: <a href="https://simhani1.atlassian.net/jira/software/projects/KB/boards/2">Jira KB</a> (team members only)
-</p>
+**10 interface languages:** English · 한국어 · 日本語 · 简体中文 · 繁體中文 · Español · Русский · Tiếng Việt · Bahasa Indonesia · ไทย
 
----
+## Team skyjs
 
-# skyjs
+We're a two-person team building K-Bap.
 
-We are a two-person team building **K-Bap**, a Korean food safety guide for people who can't read a Korean menu but need to know what's safe for them to eat.
-
-| | Role | GitHub |
+| Team member | Focus | GitHub |
 |---|---|---|
-| **Yejin Kim** | Product · mobile (React Native) · backend · design integration | [@rocher71](https://github.com/rocher71) |
-| **Jonghan Sim** | Backend · infrastructure · data pipeline | [@simhani1](https://github.com/simhani1) |
+| Yejin Kim | Product · mobile · backend · design integration | [@rocher71](https://github.com/rocher71) |
+| Jonghan Sim | Backend · infrastructure · data pipeline | [@simhani1](https://github.com/simhani1) |
 
----
+## Public repositories
 
-## K-Bap
-
-> Scan any Korean menu. See what's safe for *you* before you order.
-
-Korean menus rarely list ingredients, and staff often can't explain them in English. K-Bap closes that gap for travelers and residents with allergies, dietary rules (vegan, halal, kosher, gluten-free …) and spice limits.
-
-<p align="center">
-  <img src="./images/screen-scan.png" alt="Scan a menu" width="180">
-  <img src="./images/screen-risk.png" alt="Personal risk verdict" width="180">
-  <img src="./images/screen-ingredients.png" alt="What's inside" width="180">
-  <img src="./images/screen-ask-owner.png" alt="Ask the owner card" width="180">
-</p>
-
-**What it does**
-
-- **Scan a menu** — point the camera at a Korean menu; dishes are recognized and matched to our curated food database.
-- **Personal risk verdict** — every dish is rated Safe / Caution / Danger / Unable to assess against the ingredients you avoid, with the reason shown.
-- **Ingredients, explained** — what's inside each dish, how often an ingredient appears across restaurants, and translated names.
-- **Ask the owner** — a one-tap Korean card you show to staff: "Does this contain X? I have a food allergy."
-- **Reviews from travelers like you** — ratings and notes, filterable by your own nationality.
-- **Order history & reminders** — keep what you ordered and get a nudge to review it later.
-
-10 UI languages: English, 한국어, 中文(简体·繁體), 日本語, Español, Русский, Tiếng Việt, Bahasa Indonesia, ไทย.
-
----
-
-## Repositories
-
-| Repo | What it is | Stack |
+| Repository | Purpose | Technology |
 |---|---|---|
 | [kbap-fe](https://github.com/team-skyjs/kbap-fe) | Mobile app | React Native · Expo · TypeScript |
-| [kbap-server](https://github.com/team-skyjs/kbap-server) | API server | Kotlin · Spring Boot · MySQL · AWS |
-| [kbap-image-maker](https://github.com/team-skyjs/kbap-image-maker) | Dish image generation pipeline | Python |
-| [kbap-langchain](https://github.com/team-skyjs/kbap-langchain) | LLM experiments for menu understanding | Python |
-| [kbap-legal](https://github.com/team-skyjs/kbap-legal) | Privacy policy, terms, safety notice | Static site |
-| [kbap-study](https://github.com/team-skyjs/kbap-study) | Server-side study notes | — |
+| [kbap-server](https://github.com/team-skyjs/kbap-server) | API and batch services | Kotlin · Spring Boot · MySQL · Redis |
+| [kbap-landing](https://github.com/team-skyjs/kbap-landing) | Product website | Web |
+| [kbap-langchain](https://github.com/team-skyjs/kbap-langchain) | Food data pipeline | Python · LangChain / LangGraph |
+| [kbap-image-maker](https://github.com/team-skyjs/kbap-image-maker) | Food image generation tools | Python |
+| [kbap-legal](https://github.com/team-skyjs/kbap-legal) | Privacy policy and terms | Static site |
+| [kbap-study](https://github.com/team-skyjs/kbap-study) | Server development notes | Documentation |
 
-Specs, the admin console and internal tooling live in private repositories.
+## Building and operating K-Bap
 
----
+- Mobile: Expo Router · TanStack Query · Reanimated · i18next · Firebase Auth · ML Kit on-device OCR
+- Backend: Spring Boot · JPA / Flyway · MySQL · Redis · AWS
+- Quality and delivery: GitHub PR reviews · Jest · EAS Build / Update · GitHub Actions
+- Product and design: Jira · Figma · reviews against product specifications and implementation
 
-## Stack & tools
+[Website](https://kbap.site/) · [Privacy policy](https://team-skyjs.github.io/kbap-legal/privacy-policy.html)
 
-**Mobile app (kbap-fe)**
-- React Native 0.85 · Expo · expo-router · TypeScript
-- TanStack Query · Reanimated · react-native-svg · i18next (10 languages)
-- Firebase Auth (Sign in with Apple / Google) · ML Kit text recognition (on-device OCR) · expo-camera · expo-notifications (local reminders) · expo-secure-store
-- Sentry · Amplitude
-- EAS Build / EAS Update (OTA, teamtest·production channels) / EAS Workflows (auto OTA CI) / EAS Submit · TestFlight · Jest
-
-**Backend (kbap-server)**
-- Kotlin · Spring Boot · Gradle multi-module (api · batch · common)
-- MySQL (JPA + Flyway) · Redis (refresh-token rotation, scan reservations) · JWT
-- Firebase Admin (token verification, account deletion) · AWS S3 (images, presigned upload) · S3 Vectors (food embeddings) · SQS (batch pipeline)
-- OpenAI (gpt-4o-mini, text-embedding-3-small, gpt-image-2) · Google Places / Geocoding · Frankfurter (FX rates)
-- Langfuse (LLM observability) · Micrometer + Prometheus + Grafana · k6 + JFR load testing · Docker
-
-**Infrastructure**
-- AWS ECS + ALB + CloudWatch + SSM Parameter Store + Route 53 · Terraform
-- GitHub Actions (build, dev/prod canary deploys)
-
-**Content pipeline**
-- kbap-langchain: LangGraph / LangChain (OpenAI + Google Gemini) · Langfuse · SQS consumer · Python (uv)
-- kbap-image-maker: OpenAI Images API (gpt-image-2) · Python
-
-**Admin (kbap-admin)**
-- React · Vite · TypeScript · TanStack Router / Query / Table · Tailwind + shadcn/Radix · Cloudflare Pages
-
-**Design**
-- Figma (designer handoff) · Claude Design (early direction) · Baloo 2 (brand font, Google Fonts)
-
-**Collaboration & operations**
-- Jira (KB) · GitHub (org, branch rulesets) · OpenAI Codex (automated PR review) · Claude Code (command center, FE and BE sessions, spec-kit)
-- App Store Connect · Google Play Console · Firebase console · Proxyman (network QA)
-
----
-
-## How we work
-
-- Jira for tasks, GitHub PRs with AI-assisted code review, and a spec repository as the single source of truth for product decisions.
-- Safety first: a dish is never shown as "safe" unless we can verify it. When we can't, we say so and point you to the owner.
-
-_Safety information in K-Bap is guidance, not medical advice. Always confirm with the restaurant._
+_Last updated: October 16, 2026_
