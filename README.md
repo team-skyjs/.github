@@ -1,4 +1,9 @@
-# team-skyjs/.github
+# team-skyjs organization profile
 
-조직 프로필 페이지 소스. `profile/README.md`(English)·`profile/README.ko.md`(한국어)가 https://github.com/team-skyjs 메인에 표시됩니다.
-이미지는 `profile/images/`에 정해진 파일명으로 올리면 됩니다(`profile/images/README.md` 참조).
+GitHub displays `profile/README.md` on [the organization homepage](https://github.com/team-skyjs). The English profile links to `profile/README.ko.md` for Korean readers.
+
+- [English profile](profile/README.md)
+- [한국어 소개](profile/README.ko.md)
+- [Image sources and update notes](profile/images/README.md)
+
+Product: [K-Bap](https://kbap.site/) · iOS and Android.
